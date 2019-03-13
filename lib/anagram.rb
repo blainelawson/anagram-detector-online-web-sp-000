@@ -11,7 +11,7 @@ class Anagram
     # binding.pry
     word_array.collect do |array_word|
       @word.split("").sort == array_word.split("").sort ? array_word : nil
-    end
+    end.compact
   end
 
 
